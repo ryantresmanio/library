@@ -7,6 +7,7 @@ const Setting = () => {
   const [showModal, setShowModal] = useState(false);
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
+  const [newPasswords, setNewPasswords] = useState("");
 
   const handleOpenModal = () => {
     setShowModal(true);
@@ -127,8 +128,8 @@ const Setting = () => {
               type="password"
               placeholder="Re-type Password"
               className="rounded shadow-md px-3 py-2 mb-4 w-full"
-              value={newPassword}
-              onChange={(e) => setNewPassword(e.target.value)}
+              value={newPasswords}
+              onChange={(e) => setNewPasswords(e.target.value)}
             />
 
             <div className="flex justify-end">

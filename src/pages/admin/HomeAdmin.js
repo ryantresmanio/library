@@ -208,6 +208,8 @@ const LibraryLogs = () => {
                   onChange={(e) => setName(e.target.value)}
                 
                 />
+
+                
                 <label className="text-md">Course</label>
                 <input
                   type="text"
